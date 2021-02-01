@@ -30,7 +30,7 @@ int main()
 
     cout << "Regular wages: $" << regular_wages << endl;
     cout << "Overtime wages: $" << overtime_wages << endl;
-    cout << "Total wages: $" << total_wages <<endl;
+    cout << "Total wages: $" << total_wages << endl;
 
     return 0;
 }
