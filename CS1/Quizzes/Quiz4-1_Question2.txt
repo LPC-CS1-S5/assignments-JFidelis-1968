@@ -1,0 +1,1 @@
+This program uses a series of 'else if' statements to determine if the user input is within a certain range, and then calculates the charge for a specific weight and distance. input validation is also carried out with 'if' statements which exit the program is values are not within the given ranges.
