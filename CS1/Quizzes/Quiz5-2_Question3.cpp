@@ -22,5 +22,20 @@ int main()
     cin >> start >> end;
   }
 
+  num = start;
 
+  while ( num <= end )
+  {
+    for ( i = 2; i < num; i++ )
+    {
+      if ( num % i == 0 )
+        break;
+    }
+
+    if ( !(i != num) )
+      cout << num << " is a prime number." << endl;
+    num++;
+  }
+
+  return 0;
 }
