@@ -24,6 +24,8 @@ int main()
     exit(0);
   }
 
+  ofs << num_employees << endl;
+
   while ( i < num_employees )
   {
     cout << "Enter the employee's ID:" << endl;
