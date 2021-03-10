@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-  int N, M;
+  int N, M, i;
   int pow, exp;
   
   cout << "Enter the base 'N' and the exponent 'M'. They must be greater than 0 and less than 10:" << endl;
@@ -15,4 +15,15 @@ int main()
     cin >> N >> M;
   }
 
+  i = 0;
+  pow = 1;
+
+  while ( i < M )
+  {
+    pow = pow * N;
+    cout << pow << "\t";
+    i++;
+  }
+
+  return 0;
 }
