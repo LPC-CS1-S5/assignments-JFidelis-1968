@@ -7,7 +7,20 @@ int main()
   int i;
   int start, end;
 
-  cout << "Please enter a starting value and an ending value" << endl;
+  cout << "Please enter a starting value and an ending value. The starting value must be less than the ending value and be between 1 and 100." << endl;
   cin >> start >> end;
+
+  while ( start > end )
+  {
+    cout << "Please try again." <<endl;
+    cin >> start >> end;
+  }
+
+  while ( ( start < 1 || start > 100 ) || ( end < 1 || end > 100 ))
+  {
+    cout << "Please try again." <<endl;
+    cin >> start >> end;
+  }
+
 
 }
