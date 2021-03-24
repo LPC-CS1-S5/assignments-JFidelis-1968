@@ -22,7 +22,7 @@ int main()
 
   ifs >> num_employees;
 
-  while ( ifs >> employee_ID >> employee_name >> employee_department >> employee_salary)
+  while ( ifs >> employee_ID >> employee_name >> employee_department >> employee_salary )
   {
     cout << employee_ID << endl;
     cout << employee_name << endl;
