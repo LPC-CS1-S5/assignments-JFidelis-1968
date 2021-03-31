@@ -28,12 +28,16 @@ int get_random()
   return rnum; 
 }
 
-int get_random(n2)
+int get_random(int n2)
 {
-  
+  int rnum;
+  rnum = rand() % n2;
+  return rnum;
 }
 
-int get_random(n1, n2)
+int get_random(int n1, int n2)
 {
-  
+  int rnum;
+  rnum = rand() % n2;
+  return rnum;
 }
