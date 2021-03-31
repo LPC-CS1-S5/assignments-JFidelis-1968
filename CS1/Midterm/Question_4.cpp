@@ -11,6 +11,9 @@ int main()
 {
   int n1, n2;
 
+  n1 = 50;
+  n2 = 70;
+
   unsigned seed = time(0);
   srand(seed);
 
@@ -25,19 +28,22 @@ int get_random()
 {
   int rnum;
   rnum = rand() % 100;
-  return rnum; 
+  cout << rnum << endl; 
+  return rnum;
 }
 
 int get_random(int n2)
 {
   int rnum;
   rnum = rand() % n2;
+  cout << rnum <<endl;
   return rnum;
 }
 
 int get_random(int n1, int n2)
 {
-  int rnum;
-  rnum = rand() % n2;
+  int rnum, i;
+  rnum = (rand() % (n2 - n1)) + n1;
+  cout << rnum <<endl;
   return rnum;
 }
