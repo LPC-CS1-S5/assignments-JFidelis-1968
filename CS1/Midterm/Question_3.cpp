@@ -6,12 +6,15 @@ using namespace std;
 
 void get_random(int n);
 
-//int is_greater(int n);
+int is_greater(int n);
 
 int main()
 {
   ofstream ofs;
-  int n, N = 10;
+  int n = 0, N = 0;
+
+  unsigned seed = time(0);
+  srand(seed);
 
   ofs.open("numbers.txt");
 
@@ -24,8 +27,8 @@ int main()
   while (N < 10)
   {
     get_random(n);
-    cout << n << endl;
-    //is_greater(n);
+    if (is_greater(n))
+      ofs << n;
     N++;
   }
 
@@ -35,8 +38,14 @@ int main()
 
 void get_random(int n)
 {
-  unsigned seed = time(0);
-  srand(seed);
-
   n = rand() % 50;
+  cout << n << endl;
+}
+
+int is_greater(int n)
+{
+  if (get_random() > n)
+    return 1;
+  else
+    return 0;
 }
