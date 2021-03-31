@@ -6,8 +6,10 @@ int main()
 {
   ifstream ifs;
 
-  int score1, score2, sum, average;
+  int score1, score2, sum, average, average_sum;
   string student_name;
+
+  average_sum = 0;
 
   ifs.open("students.txt");
 
@@ -23,7 +25,12 @@ int main()
     sum = score1 + score2;
     average = sum / 2;
     cout << "Average: " << average << endl;
+    if (average > 80)
+      average_sum += 1;
   }
+  
+  cout << endl;
+  cout << "Total number of students with average over 80 is " << average_sum << endl;
 
   ifs.close();
 }
