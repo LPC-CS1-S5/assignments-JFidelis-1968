@@ -5,7 +5,7 @@ using namespace std;
 void get_input(int &, int &);
 int isSame(int, int);
 int int_division(int, int);
-void filewrite(ofstream &, int);
+void file_write(ofstream &, int);
 
 int main()
 {
@@ -20,7 +20,7 @@ int main()
     if(isSame(num1, num2))
       break;
     division = int_division(num1, num2);
-    filewrite(ofs, division);
+    file_write(ofs, division);
   }
   return 0;
 }
@@ -51,7 +51,7 @@ int int_division(int n1, int n2)
   return result;
 }
 
-void filewrite(ofstream &ofs, int division)
+void file_write(ofstream &ofs, int division)
 {
   ofs << division << endl;
   if (ofs.fail())
