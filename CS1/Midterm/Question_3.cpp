@@ -4,14 +4,14 @@
 #include <ctime>
 using namespace std;
 
-void get_random(int n);
+int get_random(void);
 
 int is_greater(int n);
 
 int main()
 {
   ofstream ofs;
-  int n = 0, N = 0;
+  int n = 0, num = 0, N = 0;
 
   unsigned seed = time(0);
   srand(seed);
@@ -26,8 +26,8 @@ int main()
 
   while (N < 10)
   {
-    get_random(n);
-    if (is_greater(n))
+    get_random();
+    if (is_greater(num))
       ofs << n;
     N++;
   }
@@ -36,15 +36,14 @@ int main()
   return 0;
 }
 
-void get_random(int n)
+int get_random(void)
 {
-  n = rand() % 50;
-  cout << n << endl;
+  return rand() % 50;
 }
 
-int is_greater(int n)
+int is_greater(int num)
 {
-  if (get_random() > n)
+  if (num > get_random())
     return 1;
   else
     return 0;
