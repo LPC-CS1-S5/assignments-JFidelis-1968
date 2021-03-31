@@ -7,7 +7,7 @@ int main()
 
   int i, j;
 
-  for (i = 0; i < N; i++)
+  for (i = 2; i < N; i++)
     for (j = i; j < M - i; j++)
       cout << " (" << i << "," << j << ") " << endl;
     cout << endl;
