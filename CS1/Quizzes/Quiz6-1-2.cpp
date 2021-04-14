@@ -23,10 +23,18 @@ int main()
 
 void swapTwoValues(int n1, int n2)
 {
+  int swap = 0;
 
+  swap = n1;
+  n1 = n2;
+  n2 = swap;
 }
 
 void swapTwoValues(float f1, float f2)
 {
-  
+  int swap = 0;
+
+  swap = f1;
+  f1 = f2;
+  f2 = swap;
 }
