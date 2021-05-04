@@ -12,17 +12,20 @@ int main()
 
   int absval = 0;
 
+  cout << "For array " << number[N] << " the following absolute value difference exist." << endl;
+
   for(int i = 0; i < N; i++)
   {
     absval = checkNum(number, i);
     if (absval == 1)
-      cout << number[i] << endl;
+      cout << number[i] << " Has an absolute value difference less than 10." << endl;
   }
 }
 
 int checkNum(int number[], int i)
 {
   if (abs(number[i] - number[i + 1]) < 10)
-    cout << "The number is less than 10" << endl;
-  return 1;
+  {
+    return 1;
+  } 
 }
