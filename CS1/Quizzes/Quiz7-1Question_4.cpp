@@ -37,5 +37,12 @@ void pintVector(vector<int> vec)
 
 void deleteOne(vector<int> &vec)
 {
-    
+   int usernum, deletecnt;
+
+   cout << "Please enter an integer between 1 and 10: " << endl;
+   cin >> usernum;
+
+   cout << usernum << " has been deleted " << deletecnt << " times." << endl;
+
+   printVector(vec);
 }
