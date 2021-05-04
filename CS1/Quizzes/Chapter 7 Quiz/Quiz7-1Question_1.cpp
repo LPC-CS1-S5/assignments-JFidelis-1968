@@ -10,14 +10,17 @@ int main()
 {
   int number[N] = {10, 15, 0, -25, 19, 20, 25, 30, 45, 20};
 
+  int n = 0;
+
   for(int i = 0; i < N; i++)
   {
-    checkNum(number, i);
+    checkNum(n, i);
+    cout << number[i];
   }
 }
 
-void checkNum(int number[i])
+void checkNum(int n, int i)
 {
-  if (abs(number[i] - number[i + 1]0) < 10)
+  if (abs(n[i] - n[i + 1]) < 10)
     cout << "The number is less than 10" << endl;
 }
