@@ -9,7 +9,7 @@ int main()
   int numbers[N] {10, 15, 0, -25, 19, 20, 25, 30, 45, 20};
   int max = 0;
 
-  for(int i = 0; i < ((N / 2) -1); i++)
+  for(int i = 0; i < (N / 2); i++)
   {
     max = findMax(numbers, max, i);
   }
