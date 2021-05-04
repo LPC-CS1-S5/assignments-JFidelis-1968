@@ -19,13 +19,13 @@ int main()
 
   makeVector(number, size);
   printVector(number);
-  deleteOne(number);
-   
+  deleteOne(number);   
 }
 
 void makeVector(vector<int> &vec, int size)
 {
-
+  for(int i = 0; i < size; i++)
+    vec.push_back(rand() % 10);
 }
 
 void pintVector(vector<int> vec)
