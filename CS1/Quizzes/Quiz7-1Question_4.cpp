@@ -30,7 +30,9 @@ void makeVector(vector<int> &vec, int size)
 
 void pintVector(vector<int> vec)
 {
-
+  for(int v : vec)
+    cout << v << "\t";
+  cout << endl;
 }
 
 void deleteOne(vector<int> &vec)
