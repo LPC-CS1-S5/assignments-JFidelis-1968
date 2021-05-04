@@ -28,7 +28,7 @@ void makeVector(vector<int> &vec, int size)
     vec.push_back(rand() % 10);
 }
 
-void pintVector(vector<int> vec)
+void printVector(vector<int> vec)
 {
   for(int v : vec)
     cout << v << "\t";
