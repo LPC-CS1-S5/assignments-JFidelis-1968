@@ -12,7 +12,10 @@ void deleteOne(vector<int> &);
 
 int main()
 {
-    
+  vector<int> number;
+  int size = 20;
+
+   
 }
 
 void makeVector(vector<int> &vec, int size)
