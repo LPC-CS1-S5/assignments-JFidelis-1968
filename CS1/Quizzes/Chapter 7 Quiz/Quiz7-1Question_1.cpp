@@ -10,4 +10,8 @@ int main()
 
 }
 
-void checkNum(int, int);
+void checkNum(int n, int i)
+{
+  if (abs(n[i] - n[i + 1]) < 10)
+    cout << "The number is less than 10" << endl;
+}
