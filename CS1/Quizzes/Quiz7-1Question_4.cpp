@@ -15,6 +15,11 @@ int main()
   vector<int> number;
   int size = 20;
 
+  srand(time(0));
+
+  makeVector(number, size);
+  printVector(number);
+  deleteOne(number);
    
 }
 
