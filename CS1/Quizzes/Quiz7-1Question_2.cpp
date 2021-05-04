@@ -15,7 +15,7 @@ void printtriangle(int numbers[][3], int SIZE)
 {
     for(int i = 0; i < SIZE; i++)
     {
-      for(int j = 0; j < SIZE; j++)
+      for(int j = 0; j < i + 1; j++)
       {
           cout << numbers[i][j] << " ";
       }
