@@ -15,7 +15,11 @@ int main()
   }
   cout << "The maximum value in the first half is " << max << endl;
 
-
+  for(int i = N - 1; i > (N / 2); i--)
+  {
+    max = findMax(numbers, max, i);
+  }
+  cout << "The maximum value in the second half is " << max << endl;
 }
 
 int findMax(int numbers[], int max, int i)
