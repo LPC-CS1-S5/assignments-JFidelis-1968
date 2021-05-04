@@ -9,12 +9,11 @@ int main()
   int numbers[N] {10, 15, 0, -25, 19, 20, 25, 30, 45, 20};
   int max = 0;
 
-  for(int i = 0; i < (N / 2); i++)
+  for(int i = 0; i < ((N / 2) -1); i++)
   {
-    findMax(numbers, max, i);
-    cout << "The maximum value in the first have is " << max << endl;
+    max = findMax(numbers, max, i);
   }
-  
+  cout << "The maximum value in the first half is " << max << endl;
 
 
 }
