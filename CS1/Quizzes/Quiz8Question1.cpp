@@ -3,12 +3,15 @@
 #include <string>
 using namespace std;
 
-const int N = 100;
-
 int main()
 {
-  int str1[N];
+  string str1;
   ifstream ifs;
 
   ifs.open("python.txt");
+
+  while(ifs >> str1)
+  {
+    cout << str1 << endl;
+  }
 }
