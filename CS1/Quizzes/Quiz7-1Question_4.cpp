@@ -31,7 +31,7 @@ void makeVector(vector<int> &vec, int size)
 void printVector(vector<int> vec)
 {
     for(int v : vec)
-    cout << v << " ";
+      cout << v << " ";
     cout << endl;
 }
 
