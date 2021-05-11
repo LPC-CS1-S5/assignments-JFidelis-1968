@@ -3,12 +3,15 @@
 #include <string>
 using namespace std;
 
+const int N = 500;
+
 int main()
 {
   string str1;
-  string str2 = "th";
+  string substr = "th";
   ifstream ifs;
   int pos;
+  int strcnt = 0;
 
   ifs.open("python.txt");
 
@@ -17,6 +20,14 @@ int main()
     cout << str1 << endl;
   }
 
-  pos = str1.find(str2, 0);
-  cout << "The substring 'th' can be found " << pos << " times in the paragraph." << endl;
+  ifs.close();
+  
+  for(int i = 0; i < N; i++)
+  {  
+    pos = str1.find(substr, strcnt);
+    strcnt += 1;    
+  }
+
+
+  cout << "The substring 'th' can be found " << strcnt << " times in the paragraph." << endl;
 }
