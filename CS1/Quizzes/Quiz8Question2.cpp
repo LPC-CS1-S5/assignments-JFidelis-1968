@@ -20,12 +20,20 @@ int main()
     if (isalpha(useremail[i]))
     {
       cnt_alpha++;
+      if(cnt_alpha > 15 || cnt_alpha < 5)
+      {  
+        cerr << "Invalid email ID." << endl;
+        exit(0);
+      }
     }
     if (isdigit(useremail[i]))
     {
       cnt_digit++;
+      if(cnt_digit > 0)
+      {  
+        cerr << "Invalid email ID." << endl;
+        exit(0);
+      }
     }
   }
-
-
 }
