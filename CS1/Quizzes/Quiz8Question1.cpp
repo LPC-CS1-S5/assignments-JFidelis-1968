@@ -3,31 +3,28 @@
 #include <string>
 using namespace std;
 
-const int N = 500;
-
 int main()
 {
-  string str1;
-  string substr = "th";
-  ifstream ifs;
-  int pos;
-  int strcnt = 0;
+    string str1;
+    string substr1 = "th";
+    ifstream ifs;
+    int strcnt = 0;
 
-  ifs.open("python.txt");
+    ifs.open("python.txt");
 
-  while(ifs >> str1)
-  {
-    cout << str1 << endl;
-  }
+    while(ifs >> str1)
+    {
+        cout << str1 << endl;
+    }
 
-  ifs.close();
-  
-  for(int i = 0; i < N; i++)
-  {  
-    pos = str1.find(substr, strcnt);
-    strcnt += 1;    
-  }
+    int pos = str1.find(substr1, 0);
 
+    while(pos != string::npos)
+    {  
+        strcnt += 1;    
+        pos = str1.find(substr1, pos + 1);
+    }
 
-  cout << "The substring 'th' can be found " << strcnt << " times in the paragraph." << endl;
-}
+    ifs.close();
+
+    cout << "The substring 'th' can be found " << strcnt << " times in the paragraph." << endl;
