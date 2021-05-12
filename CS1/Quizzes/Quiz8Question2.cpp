@@ -15,7 +15,7 @@ int main()
   int cnt_alpha = 0;
   int cnt_digit = 0;
 
-  for(int i = 0; i < 30; i++)
+  for(int i = 0; i < l; i++)
   {
     if (isalpha(useremail[i]))
     {
