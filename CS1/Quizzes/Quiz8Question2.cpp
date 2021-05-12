@@ -4,10 +4,10 @@ using namespace std;
 
 int main()
 {
-  string useremail;
+  char useremail[30];
   
   cout << "PLease enter a valid email address: " << endl;
   cin >> useremail;
 
-  
+
 }
