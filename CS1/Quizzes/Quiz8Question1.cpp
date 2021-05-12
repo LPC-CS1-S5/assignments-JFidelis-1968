@@ -12,7 +12,6 @@ int main()
 
     ifs.open("python.txt");
     
-
     while(ifs >> str1)
     {
         int pos = str1.find(substr1, 0);
