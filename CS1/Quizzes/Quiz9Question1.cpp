@@ -10,9 +10,14 @@ struct Employeerecord
   string date;
 };
 
-
+void makeStruct(Employeerecord[]);
 
 int main()
 {
 
+}
+
+void makeStruct(Employeerecord[]);
+{
+  
 }
