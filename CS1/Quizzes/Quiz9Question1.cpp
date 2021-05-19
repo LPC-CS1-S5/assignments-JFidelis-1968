@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 struct Employeerecord
@@ -19,7 +20,19 @@ int main()
   makeStruct(e);
 }
 
-int makeStruct(Employeerecord e[]);
+int makeStruct(Employeerecord e[])
 {
+  int i;
+  ifstream ifs;
 
+  ifs.open("employee.txt");
+  if(ifs.fail())
+  {
+    cerr << "File Open Error." << endl;
+    exit(0);
+  }
+
+  i = 0;
+
+  while(ifs >> e[i].ID >> e[i].ID >> e[i].ID >> e[i].ID >> e[i].ID)
 }
