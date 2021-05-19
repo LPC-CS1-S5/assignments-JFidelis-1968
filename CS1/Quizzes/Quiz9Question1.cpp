@@ -34,5 +34,9 @@ int makeStruct(Employeerecord e[])
 
   i = 0;
 
-  while(ifs >> e[i].ID >> e[i].ID >> e[i].ID >> e[i].ID >> e[i].ID)
+  while(ifs >> e[i].ID >> e[i].name >> e[i].salary >> e[i].dname >> e[i].date)
+  {
+    i++;
+  }
+  return i - 1;
 }
