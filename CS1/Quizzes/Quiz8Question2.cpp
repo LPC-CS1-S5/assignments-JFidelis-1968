@@ -4,9 +4,11 @@
 #include <cmath>
 using namespace std;
 
+int stringSplit(const char[], char[][100], char);
+
 int main()
 {
-  char useremail[30];
+  char useremail[100];
   
   cout << "PLease enter a valid email address: " << endl;
   cin >> useremail;
@@ -36,4 +38,9 @@ int main()
       }
     }
   }
+}
+
+int stringSplit(const char useremail[], char emailid[][100], '@')
+{
+
 }
