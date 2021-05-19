@@ -10,7 +10,9 @@ struct Employeerecord
   string date;
 };
 
+
+
 int main()
 {
-  
+
 }
