@@ -15,7 +15,11 @@ int main()
     for(int i = 0; i < stringSIZE; i++)
     {
       int pos = words.find(userinput, 0);
+
+      while(pos != string::npos)
+      {
+        pos = words.find(userinput, pos + 1);
+        cout << "The string " << userinput << "can be found at position " << pos << endl;
+      }
     }
-
-
 }
