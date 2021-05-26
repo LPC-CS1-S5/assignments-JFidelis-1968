@@ -13,6 +13,12 @@ int main()
   int numbers2[SIZE2] = {1, 2, 3, 5, 9, 10, 11, 13, 15, 17};
 
   result = findSame(numbers1, numbers2);
+
+  if(result == 1)
+    cout << "numbers1 is a subset of numbers 2." << endl;
+  else 
+    cout << "numbers1 is not a subset of numbers 2." << endl;
+
 }
 
 int findSame(int numbers1[], int numbers2[])
