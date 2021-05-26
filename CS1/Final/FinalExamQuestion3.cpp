@@ -23,5 +23,11 @@ int main()
 
 int findSame(int numbers1[], int numbers2[])
 {
-    
+   for(int i = 0; i < SIZE2; i++)
+   {
+    for(int j = 0; j < SIZE1; j++)
+      {
+        
+      }
+   } 
 }
