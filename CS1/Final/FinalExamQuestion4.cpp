@@ -3,17 +3,23 @@
 #include <string>
 using namespace std;
 
+void findString(string, string)
+
 int main()
 {
     string userinput;
     string words;
-    ifstream ifs;
-    int strcnt = 0;
-    int poscnt = 0;
 
     cout << "Please enter the string you would like to find: " << endl;
     cin >> userinput;
 
+}
+    
+void findString(string userinput, string words)
+{   
+    int strcnt = 0;
+    int poscnt = 0;
+    ifstream ifs;
     ifs.open("words.txt");
 
     while(ifs >> words)
