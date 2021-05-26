@@ -41,22 +41,14 @@ void readFile(Grade g[])
 
   while(ifs >> readline)
   {
-    gr.first = readline.substr(0,);
+    pos = readline.find(',', pos + 1);
+    gr.first = readline.substr(0, pos);
 
-    pos = readline.find(',');
+    
+
   }
 
-  for(int i = 0; i < NUM_STUDENTS; i++)
-  {
-    ifs >> g[i].first;
-    ifs >> g[i].last;
-    ifs >> g[i].ssn;
-    for(int j = 0; j < N; j++)
-      ifs >> g[i].score.sc[j];
-    ifs >> g[i].score.grade;
-  }
-
-  ifs.close();
+  
 }
 
 void binWrite(Grade g[])
