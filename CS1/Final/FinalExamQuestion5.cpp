@@ -23,11 +23,19 @@ int main()
   Grade g;
 
   readFile();
+  binWrite();
 }
 
 void readFile()
 {
+  ifstream ifs;
 
+  ifs.open("grades.txt");
+
+  while(ifs >> )
 }
 
 void binWrite()
+{
+
+}
