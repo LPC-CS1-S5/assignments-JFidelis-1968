@@ -32,33 +32,15 @@ void readFile(Grade g[])
 {
   ifstream ifs;
 
-  string string1;
-  string first;
-  string last;
-  string ssn;
-  Scores score;
+  string readline;
 
   int pos;
 
   ifs.open("grades.txt");
 
-  while(ifs >> string1)
+  while(ifs >> readline)
   {
-    int prev = pos + 1;
-    pos = string1.find(',', pos + 1);
-    first = string1.substr(prev, pos - prev);
-
-    prev = pos + 1;
-    pos = string1.find(',', pos + 1);
-    last = string1.substr(prev, pos - prev);
-
-    prev = pos + 1;
-    pos = string1.find(',', pos + 1);
-    ssn = string1.substr(prev, pos - prev);
-
-    prev = pos + 1;
-    pos = string1.find(',', pos + 1);
-    score = string1.substr(prev, pos - prev);
+    g.
   }
 
   for(int i = 0; i < NUM_STUDENTS; i++)
@@ -81,4 +63,6 @@ void binWrite(Grade g[])
   ofs.open("grades.bin");
 
   strcpy(g.first, ",");
+
+  ofs.close();
 }
