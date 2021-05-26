@@ -16,13 +16,18 @@ struct Grade{
 };
 
 void readFile();
+void binWrite();
 
 int main()
 {
   Grade g;
+
+  readFile();
 }
 
 void readFile()
 {
 
 }
+
+void binWrite()
