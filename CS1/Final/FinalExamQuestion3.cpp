@@ -27,7 +27,8 @@ int findSame(int numbers1[], int numbers2[])
    {
     for(int j = 0; j < SIZE1; j++)
       {
-        
+        if(numbers2[i] == numbers1[j])
+          cout << "The array element " << j << " from numbers 2 is contained in array numbers1." << endl;
       }
    } 
 }
