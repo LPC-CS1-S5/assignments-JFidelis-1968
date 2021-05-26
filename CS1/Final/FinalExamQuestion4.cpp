@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-void findString(string, string)
+void findString(string, string);
 
 int main()
 {
@@ -12,6 +12,8 @@ int main()
 
     cout << "Please enter the string you would like to find: " << endl;
     cin >> userinput;
+
+    findString(userinput, words);
 
 }
     
@@ -31,7 +33,8 @@ void findString(string userinput, string words)
       {
         strcnt +=1;
         pos = words.find(userinput, pos + 1);
-        cout << "The string " << userinput << "can be found at position " << pos << endl;
+        cout << "The string " << userinput << "can be found at position " << poscnt << endl;
       }
     }
+    cout << "The userinput string " << userinput <<  " was found " << strcnt << " times." << endl;
 }
