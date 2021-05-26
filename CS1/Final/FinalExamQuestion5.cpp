@@ -48,11 +48,24 @@ void readFile(Grade g[])
     pos = readline.find(',', pos + 1);
     gr.last = readline.substr(prev, pos - prev);
 
+    prev = pos + 1;
+    pos = readline.find(',', pos + 1);
+    gr.ssn = readline.substr(prev, pos - prev);
     
+    for(int i = 0; i < N; i++)
+    {
+        prev = pos + 1;
+        pos = readline.find(',', pos + 1);        
+        gr.score.sc[i] = stod(readline.substr(prev, pos - prev));
+    }
 
+    prev = pos + 1;
+    pos = readline.find(',', pos + 1);
+    gr.score.grade = readline.substr(prev, pos - prev);
+  
   }
 
-  
+  ifs.close();
 }
 
 void binWrite(Grade g[])
