@@ -34,11 +34,11 @@ void readFile(Grade g[])
   string first;
   string last;
   string ssn;
-  string grade;
-  double sc[N];
-
+  Scores score;
 
   ifs.open("grades.txt");
+
+  for(ifs >> string)
 
   for(int i = 0; i < NUM_STUDENTS; i++)
   {
