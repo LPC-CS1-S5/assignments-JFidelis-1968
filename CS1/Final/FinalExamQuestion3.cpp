@@ -23,12 +23,20 @@ int main()
 
 int findSame(int numbers1[], int numbers2[])
 {
+   int result = 0;
+   int elementSum = 0;
    for(int i = 0; i < SIZE2; i++)
    {
     for(int j = 0; j < SIZE1; j++)
       {
         if(numbers2[i] == numbers1[j])
           cout << "The array element " << j << " from numbers 2 is contained in array numbers1." << endl;
+          elementSum += 1;
       }
-   } 
+   }
+  if(elementSum == 5)
+    result = 1;
+  else
+    result = 0;
+  return result; 
 }
