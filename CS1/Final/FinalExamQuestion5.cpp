@@ -44,6 +44,10 @@ void readFile(Grade g[])
     pos = readline.find(',', pos + 1);
     gr.first = readline.substr(0, pos);
 
+    int prev = pos + 1;
+    pos = readline.find(',', pos + 1);
+    gr.last = readline.substr(prev, pos - prev);
+
     
 
   }
