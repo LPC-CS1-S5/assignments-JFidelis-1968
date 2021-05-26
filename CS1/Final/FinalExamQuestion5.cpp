@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 using namespace std;
 
 const unsigned short N=5;
@@ -31,7 +32,7 @@ int main()
 void readFile(Grade g[])
 {
   ifstream ifs;
-
+  Grade gr;
   string readline;
 
   int pos;
@@ -40,7 +41,9 @@ void readFile(Grade g[])
 
   while(ifs >> readline)
   {
-    g.
+    gr.first = readline.substr(0,);
+
+    pos = readline.find(',');
   }
 
   for(int i = 0; i < NUM_STUDENTS; i++)
