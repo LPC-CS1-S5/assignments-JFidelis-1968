@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 const unsigned short N=5;
@@ -14,7 +15,14 @@ struct Grade{
       Scores score;
 };
 
+void readFile();
+
 int main()
 {
   Grade g;
+}
+
+void readFile()
+{
+
 }
