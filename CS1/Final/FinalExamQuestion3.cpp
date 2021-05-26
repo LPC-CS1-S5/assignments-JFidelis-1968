@@ -35,7 +35,7 @@ int findSame(int numbers1[], int numbers2[])
             }
         }
     }
-    if(elementSum == 5)
+    if(elementSum == SIZE1)
         result = 1;
     else
         result = 0;
