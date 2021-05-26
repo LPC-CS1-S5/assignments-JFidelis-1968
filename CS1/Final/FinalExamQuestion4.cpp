@@ -16,12 +16,14 @@ int main()
 
     ifs.open("words.txt");
 
-    for(int i = 0; i < ; i++)
+    while(ifs >> words)
     {
       int pos = words.find(userinput, 0);
+      poscnt += 1;
 
       while(pos != string::npos)
       {
+        strcnt +=1;
         pos = words.find(userinput, pos + 1);
         cout << "The string " << userinput << "can be found at position " << pos << endl;
       }
