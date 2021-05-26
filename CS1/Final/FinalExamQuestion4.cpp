@@ -22,6 +22,7 @@ void findString(string userinput, string words)
     int strcnt = 0;
     int poscnt = 0;
     ifstream ifs;
+    
     ifs.open("words.txt");
 
     while(ifs >> words)
