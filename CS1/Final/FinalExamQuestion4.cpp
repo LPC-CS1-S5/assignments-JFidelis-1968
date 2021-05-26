@@ -26,15 +26,18 @@ void findString(string userinput, string words)
 
     while(ifs >> words)
     {
-      int pos = words.find(userinput, 0);
-      poscnt += 1;
+        int pos = words.find(userinput, 0);
+        poscnt += 1;
 
-      while(pos != string::npos)
-      {
-        strcnt +=1;
-        pos = words.find(userinput, pos + 1);
-        cout << "The string " << userinput << "can be found at position " << poscnt << endl;
-      }
+        while(pos != string::npos)
+        {
+            strcnt +=1;
+            pos = words.find(userinput, pos + 1);
+            cout << "The string " << userinput << " can be found at position " << poscnt << endl;
+        }
     }
+
+    ifs.close();
+
     cout << "The userinput string " << userinput <<  " was found " << strcnt << " times." << endl;
 }
